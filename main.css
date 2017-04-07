@@ -6,17 +6,24 @@ html {
 body {
   display: flex;
   flex-flow: column wrap;
-  background-color: #D2EDEC;
+  background-color: #21C2E0;
   margin: 0px;
-  min-height: 100%;
-  background-image: url("https://openclipart.org/image/2400px/svg_to_png/222933/Stegosaurus.png"); }
+  min-height: 100%; }
 
 .intro {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  border-bottom: 1em solid #2182F6;
-  font-family: Alegreya, "Times New Roman"; }
+  border-bottom: 1em solid #F36962;
+  font-family: Alegreya, "Times New Roman";
+  border-style: outset; }
+
+.bottom {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  border-top: 1em solid #F36962;
+  border-style: inset; }
 
 .grad {
   background: #21C2E0;
@@ -37,33 +44,34 @@ body {
   flex: 1;
   padding: 20px;
   font-size: 20px;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  background-image: url("images/oatmealbg.jpg");
+  border-style: inset; }
 
 .mainHead {
   align-self: center;
   padding: 10px;
-  padding-top: 30px; }
+  margin-top: 30px;
+  background-color: rgba(227, 246, 246, 0.98039); }
 
 .mainBody {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid #033088;
-  padding: 20px; }
+  border-top: 0.5em solid #033088;
+  padding: 1em;
+  margin-top: 1em; }
 
 .columnOne {
-  background-color: rgba(234, 234, 234, 0.8);
+  background-color: rgba(227, 246, 246, 0.98039);
   padding: 30px;
-  border-right: 2px solid #2182F6; }
+  border-right: 0.5em solid #F36962;
+  margin-left: 1em; }
 
 .columnTwo {
-  background-color: rgba(234, 234, 234, 0.8);
-  padding: 30px; }
-
-.bottom {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-end; }
+  background-color: rgba(227, 246, 246, 0.98039);
+  padding: 30px;
+  margin-right: 1em; }
 
 .footer {
   padding: 20px; }
@@ -75,7 +83,7 @@ body {
 
 /* ID's */
 #title {
-  color: #2182F6;
+  color: #F36962;
   margin-bottom: 5px; }
 
 #subTitle {
