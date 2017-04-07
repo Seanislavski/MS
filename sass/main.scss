@@ -1,0 +1,103 @@
+/*# sourceMappingURL=main.css */
+@import 'variables';
+
+
+html{
+    height: 100%;
+}
+
+body {
+    display:flex;
+    flex-flow: column wrap;
+    background-color:$backgroundColor;
+    //font-family: $fontStack;
+    margin: 0px;
+    min-height: 100%;
+    background-image: url($stegoPic);
+}
+
+.intro {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-bottom: 1em solid $fontColor;
+    // color: fontColor;
+    font-family: $fontStack;
+}
+
+.grad {
+ background: $primaryColor; /* For browsers that do not support gradients */
+ background: -webkit-radial-gradient(circle, $gradTo,$gradColor); /* Safari */
+ background: -o-radial-gradient(circle, $gradTo,$gradColor); /* Opera 11.6 to 12.0 */
+ background: -moz-radial-gradient(circle, $gradTo,$gradColor); /* Firefox 3.6 to 15 */
+ background: radial-gradient(circle, $gradTo,$gradColor); /* Standard syntax */
+}
+
+
+
+.main{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+    font-family: $sansStack;
+}
+
+    .mainHead{
+        align-self: center;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .mainBody{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid $subFontColor;
+        padding: 20px;
+    }
+
+        .columnOne{
+            background-color: $transparentWhite;
+            padding: 30px;
+            border-right: 2px solid $fontColor;
+        }
+
+        .columnTwo{
+            background-color: $transparentWhite;
+            padding: 30px;
+        }
+
+.bottom{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+}
+
+.footer{
+    padding: 20px;
+}
+
+.image{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+/* ID's */
+
+#title {
+    color: $fontColor;
+    margin-bottom: 5px;
+
+}
+
+#subTitle{
+    color: $subFontColor;
+    margin-top: 0px;
+}
+
