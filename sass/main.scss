@@ -19,18 +19,16 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    border-bottom: 1em solid $fontColor;
+    border-bottom: 1em outset $fontColor;
     // color: fontColor;
     font-family: $fontStack;
-    border-style: outset;
 }
 
 .bottom{
     display:flex;
     flex-flow: column wrap;
     align-items: flex-end;
-    border-top: 1em solid $fontColor;
-    border-style: inset;
+    border-top: 1em inset $fontColor;
 }
 
 .grad {
@@ -51,8 +49,8 @@ body {
     padding: 20px;
     font-size: 20px;
     font-family: $sansStack;
-    background-image: url($oatmealBg);
-    border-style: inset;
+    background-image: url($grainsBg);
+    background-position: center center;
 }
 
     .mainHead{
@@ -66,7 +64,7 @@ body {
         width: 100vw;
         display: flex;
         justify-content: space-around;
-        border-top: 0.5em solid $subFontColor;
+        border-top: 0.25em groove $fontColor;
         padding: 1em;
         margin-top: 1em;
     }
@@ -84,8 +82,6 @@ body {
             margin-right: 1em;
         }
 
-
-
 .footer{
     padding: 20px;
 }
@@ -94,20 +90,16 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
-
 
 /* ID's */
 
 #title {
     color: $fontColor;
     margin-bottom: 5px;
-
 }
 
 #subTitle{
     color: $subFontColor;
     margin-top: 0px;
 }
-
