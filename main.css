@@ -1,12 +1,29 @@
 /*# sourceMappingURL=main.css */
 @import url("https://fonts.googleapis.com/css?family=Alegreya|Open+Sans");
+@media only screen and (max-width: 768px) {
+  /* Styles */
+  .mainBody {
+    flex-direction: column; }
+
+  .columnOne {
+    margin-right: 1em;
+    border-bottom: 0.5em solid #CF2F4E; }
+
+  .columnTwo {
+    margin-left: 1em; }
+
+  .mainBody > * {
+    flex: 1; } }
+@media only screen and (min-width: 768px) {
+  .columnOne {
+    border-right: 0.5em solid #CF2F4E; } }
 html {
   height: 100%; }
 
 body {
   display: flex;
   flex-flow: column wrap;
-  background-color: #21C2E0;
+  background-color: #187585;
   margin: 0px;
   min-height: 100%; }
 
@@ -14,25 +31,25 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  border-bottom: 1em outset #F36962;
+  border-bottom: 1em outset #CF2F4E;
   font-family: Alegreya, "Times New Roman"; }
 
 .bottom {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-end;
-  border-top: 1em inset #F36962; }
+  border-top: 1em inset #CF2F4E; }
 
 .grad {
-  background: #21C2E0;
+  background: #187585;
   /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(circle, #89edff, #21c2e0);
+  background: -webkit-radial-gradient(circle, #00d0f4, #1cabc4);
   /* Safari */
-  background: -o-radial-gradient(circle, #89edff, #21c2e0);
+  background: -o-radial-gradient(circle, #00d0f4, #1cabc4);
   /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(circle, #89edff, #21c2e0);
+  background: -moz-radial-gradient(circle, #00d0f4, #1cabc4);
   /* Firefox 3.6 to 15 */
-  background: radial-gradient(circle, #89edff, #21c2e0);
+  background: radial-gradient(circle, #00d0f4, #1cabc4);
   /* Standard syntax */ }
 
 .main {
@@ -50,26 +67,29 @@ body {
   align-self: center;
   padding: 10px;
   margin-top: 30px;
-  background-color: rgba(227, 246, 246, 0.98039); }
+  background-color: rgba(227, 246, 246, 0.8); }
 
 .mainBody {
-  width: 100vw;
   display: flex;
-  justify-content: space-around;
-  border-top: 0.25em groove #F36962;
+  flex: 0 1 auto;
+  width: 100vw;
+  justify-content: center;
+  border-top: 0.25em groove #CF2F4E;
   padding: 1em;
   margin-top: 1em; }
 
 .columnOne {
-  background-color: rgba(227, 246, 246, 0.98039);
-  padding: 30px;
-  border-right: 0.5em solid #F36962;
-  margin-left: 1em; }
+  background-color: rgba(227, 246, 246, 0.8);
+  padding: 30px; }
 
 .columnTwo {
-  background-color: rgba(227, 246, 246, 0.98039);
-  padding: 30px;
-  margin-right: 1em; }
+  background-color: rgba(227, 246, 246, 0.8);
+  padding: 30px; }
+
+.list {
+  flex-wrap: wrap;
+  order: 3;
+  flex-basis: 100%; }
 
 .footer {
   padding: 20px; }
@@ -81,7 +101,7 @@ body {
 
 /* ID's */
 #title {
-  color: #F36962;
+  color: #CF2F4E;
   margin-bottom: 5px; }
 
 #subTitle {

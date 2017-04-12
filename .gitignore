@@ -1,2 +1,4 @@
 .sass-cache/
 *.css.map
+scripts/greensock-js
+scripts/__MacOSX
