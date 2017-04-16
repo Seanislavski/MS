@@ -2,33 +2,46 @@
 @import 'variables';
 @import 'mqueries';
 
+* {
+    margin: 0;
+}
+
 html{
     height: 100%;
 }
 
 body {
-    display:flex;
-    flex-flow: column wrap;
-    background-color:$primaryColor;
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr; //[page-end];
+    // flex-flow: column wrap;
+    background-color: $primaryColor;
     //font-family: $fontStack;
     margin: 0px;
     min-height: 100%;
 }
 
 .intro {
-    display: flex;
-    flex-flow: column wrap;
+    grid-area: header;
+    grid-column:1 / span 4;
+    grid-row: 1/2;
     align-items: center;
     border-bottom: 1em outset $fontColor;
     // color: fontColor;
+    max-height: 150px;
     font-family: $fontStack;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
 }
 
 .bottom{
-    display:flex;
-    flex-flow: column wrap;
-    align-items: flex-end;
+    grid-column: 1 / span 4;
+    grid-row: 5 / 6 ;
     border-top: 1em inset $fontColor;
+    max-height: 60px;
+    display:flex;
+    justify-content: flex-end;
 }
 
 .grad {
@@ -40,10 +53,11 @@ body {
 }
 
 .main{
-    display:flex;
-    flex-flow: column wrap;
+    grid-area: 2 / 1 / span 3 / span 4;
+    // grid-column: 1/ span 4;
+    // grid-row: 2 / span 3;
+    display: subgrid;
     align-items: center;
-    flex: 1;
     padding: 20px;
     font-size: 20px;
     font-family: $sansStack;
@@ -59,10 +73,10 @@ body {
     }
 
     .mainBody{
-        display:flex;
-        flex: 0 1 auto;
-        width: 100vw;
-        justify-content: center;
+        display: grid;
+        // flex: 0 1 auto;
+        // width: 95vw;
+        // justify-content: center;
         border-top: 0.25em groove $fontColor;
         padding: 1em;
         margin-top: 1em;
@@ -70,12 +84,16 @@ body {
 
 //spans (flex-items)
         .columnOne{
+            grid-column: 1;
+            grid-row: 1/2;
             background-color: $transparentWhite;
             padding: 30px;
             // margin-left: 1em;
         }
 
         .columnTwo{
+            grid-column: 2;
+            grid-row: 1/ span 5;
             background-color: $transparentWhite;
             padding: 30px;
             // margin-right: 1em;

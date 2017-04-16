@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display:grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 6em auto auto 2em [page-end];
+  min-height: 100%;
+}
+
+.intro {
+  grid-area: header;
+  grid-column:1 / span 4;
+  grid-row: 1/2;
+  background-color: #0fc39f;
+}
+
+.main {
+  grid-column: 1/ span 4;
+  grid-row: 2;
+}
+.mainHead {
+  align-self: center;
+  justify-self: center;
+  background-color: blue;
+}
+.mainBody {
+  display:grid;
+}
+
+.columnOne {
+  grid-column: 1;
+  grid-row: 1/2;
+  background-color: rgba(227, 246, 246, 0.8);
+  padding: 30px;
+}
+
+.columnTwo {
+  background-color: rgba(227, 246, 246, 0.8);
+  padding: 30px;
+  grid-column: 2;
+  grid-row: 1/ span 5;
+}
+
+.columnThree {
+grid-column: 1;
+grid-row: 3;
+background-color: orange;
+}
+
+.columnThreeFive {
+grid-column: 2;
+grid-row: 3;
+}
+
+.columnFour {
+grid-column: 3 / span 4;
+grid-row: 3;
+background-color: orange;
+}
+
+.grad {
+  /*background-color: #0fc39f;*/
+}
+
+.bottom {
+  grid-column: 1 / span 4;
+  grid-row: 4;
+  background-color: #0fc39f;
+  display:flex;
+  justify-content: flex-end;
+  /*padding: 20px;*/
+}
+
+/*ID's*/
+#title {
+  text-align: center;
+  color: blue;
+}
+
+#subTitle {
+    text-align: center;
+  color:red;
+}
