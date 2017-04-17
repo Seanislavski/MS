@@ -1,13 +1,18 @@
 @media only screen and (max-width : 768px) {
 /* Styles */
     .mainBody{
-        flex-direction: column;
+        // flex-direction: column;
+    }
+    .main{
+        grid-area: 4 / 1 / span 3 / span 4;
     }
     .columnOne{
         margin-right: 1em;
         border-bottom: 0.5em solid $fontColor;
     }
     .columnTwo{
+        grid-column: 1;
+        grid-row: 2 / span 5;
         margin-left: 1em;
     }
     .mainBody > * {
